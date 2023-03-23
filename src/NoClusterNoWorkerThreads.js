@@ -7,7 +7,7 @@ class NoClusterNoWorkerThreads {
         const app = express();
 
         app.get("/long", (req, res) => {    
-            for (let i = 0; i < 1e10; i++) {
+            for (let i = 0; i < 1e5; i++) {
 
             }
             res.send(`Long complete by process ${process.pid}.`);
